@@ -1,0 +1,1388 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `companies`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `companies`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `companies`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `data_files`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `data_files`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `infos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `infos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `infos`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `offers`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `offers`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `offers`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `pictures`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `pictures`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pictures`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `profiles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `profiles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `profiles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `reactions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `reactions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `reactions`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408123849)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'mywins' already exists: CREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (148.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (267.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408123849)
+  [4;35;1mSQL (164.5ms)[0m   [0mCREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (57.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100408123849')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `mywins`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:41:18) [GET]
+  [4;36;1mMywin Load (0.3ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+Completed in 37ms (View: 31, DB: 0) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:41:21) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:41:23) [GET]
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb6350d84>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (101.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (3.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:41:36) [GET]
+  [4;35;1mMywin Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb648cf90>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (105.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:41:44) [GET]
+  [4;36;1mMywin Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:41:44) [GET]
+  [4;36;1mMywin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb6435dd0>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb643581c>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (129.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:41:46) [GET]
+  [4;35;1mMywin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb65796b0>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:45:35) [GET]
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb69ccc44>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:45:37) [GET]
+  [4;35;1mMywin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+
+ActionView::TemplateError (undefined method `windowslayout' for #<Mywin:0xb63f02a8>) on line #36 of app/views/mywins/new.html.erb:
+33:   </p>
+34:   <p>
+35:     <%= f.label :windowslayout %><br />
+36:     <%= f.text_field :windowslayout %>
+37:   </p>
+38:   <p>
+39:     <%= f.label :points %><br />
+
+    app/views/mywins/new.html.erb:36
+    app/views/mywins/new.html.erb:3
+    app/controllers/mywins_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (97.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'mywins' already exists: CREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `windowslayout` int(11), `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'mywins' already exists: CREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `windowslayout` int(11), `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'mywins' already exists: CREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `windowslayout` int(11), `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'mywins' already exists: CREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `windowslayout` int(11), `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (143.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (261.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+  [4;35;1mSQL (164.9ms)[0m   [0mCREATE TABLE `mywins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `initial` varchar(255), `surname` varchar(255), `address` varchar(255), `areacode` varchar(255), `phonenumber` int(11), `numberofwindows` int(11), `windowsdescription` text, `windowslayout` int(11), `points` int(11), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100408124621')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `mywins`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:47:42) [GET]
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/pluto/public/mywins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:47:46) [GET]
+  [4;35;1mMywin Load (0.3ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 13:47:48) [GET]
+  [4;36;1mMywin Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+Completed in 27ms (View: 10, DB: 11) | 200 OK [http://localhost/pluto/public/mywins/new]
+  [4;35;1mSQL (5.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#create (for 127.0.0.1 at 2010-04-08 13:48:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HqM3+///bkeu2xZG8J82BApurXpxuK4jb9E9sqJWm7k=", "mywin"=>{"address"=>"12 Eindhoven Dutch", "accept"=>"1", "phonenumber"=>"343", "windowslayout"=>"Good", "points"=>"22", "windowsdescription"=>"Yo man", "numberofwindows"=>"4", "areacode"=>"43243", "surname"=>"Singh", "initial"=>"S"}}
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMywin Create (0.3ms)[0m   [0mINSERT INTO `mywins` (`address`, `accept`, `created_at`, `phonenumber`, `updated_at`, `windowslayout`, `numberofwindows`, `windowsdescription`, `points`, `areacode`, `surname`, `initial`) VALUES('12 Eindhoven Dutch', 1, '2010-04-08 12:48:21', 343, '2010-04-08 12:48:21', 0, 4, 'Yo man', 22, '43243', 'Singh', 'S')[0m
+  [4;36;1mSQL (55.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost/pluto/public/mywins/1
+Completed in 69ms (DB: 62) | 302 Found [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#show (for 127.0.0.1 at 2010-04-08 13:48:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mMywin Load (0.2ms)[0m   [0;1mSELECT * FROM `mywins` WHERE (`mywins`.`id` = 1) [0m
+Rendering template within layouts/mywins
+Rendering mywins/show
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/pluto/public/mywins/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:48:22) [GET]
+  [4;35;1mMywin Load (3.0ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 17ms (View: 8, DB: 4) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+Migrating to CreateReactions (20100408124923)
+  [4;36;1mSQL (127.8ms)[0m   [0;1mCREATE TABLE `reactions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `company` varchar(255), `rotation` varchar(255), `preview` varchar(255), `accept` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408124923')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `reactions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `reactions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `reactions`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMywins (20100408124621)
+Migrating to CreateReactions (20100408124923)
+Migrating to CreateSearchoffers (20100408125000)
+  [4;36;1mSQL (364.8ms)[0m   [0;1mCREATE TABLE `searchoffers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `company` varchar(255), `address` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408125000')[0m
+Migrating to CreateProfiles (20100408125021)
+  [4;36;1mSQL (115.1ms)[0m   [0;1mCREATE TABLE `profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408125021')[0m
+Migrating to CreateInformation (20100408125035)
+  [4;36;1mSQL (127.3ms)[0m   [0;1mCREATE TABLE `information` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408125035')[0m
+Migrating to CreateUsers (20100408125046)
+  [4;36;1mSQL (128.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408125046')[0m
+Migrating to CreateCompanies (20100408125054)
+  [4;36;1mSQL (126.7ms)[0m   [0;1mCREATE TABLE `companies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100408125054')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `companies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `companies`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `companies`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `information`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `information`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `information`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `mywins`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `mywins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `profiles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `profiles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `profiles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `reactions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `reactions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `reactions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `searchoffers`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `searchoffers`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `searchoffers`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:52:37) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (2.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:52:39) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 15ms (View: 8, DB: 5) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:52:43) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:26) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 45ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:27) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:27) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:27) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:28) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:28) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:28) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:54:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:54:41) [GET]
+  [4;36;1mMywin Load (0.2ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;35;1mMywin Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:55:26) [GET]
+  [4;36;1mMywin Load (0.2ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Completed in 92ms (View: 85, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:55:28) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:55:29) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReactionsController#index (for 127.0.0.1 at 2010-04-08 13:55:30) [GET]
+  [4;35;1mReaction Load (0.3ms)[0m   [0mSELECT * FROM `reactions` [0m
+Rendering template within layouts/reactions
+Rendering reactions/index
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/pluto/public/reactions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:55:31) [GET]
+
+ActionController::RoutingError (No route matches "/offers" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:55:38) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 46ms (View: 40, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchoffersController#index (for 127.0.0.1 at 2010-04-08 13:55:51) [GET]
+  [4;35;1mSearchoffer Load (0.3ms)[0m   [0mSELECT * FROM `searchoffers` [0m
+Rendering searchoffers/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/pluto/public/searchoffers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchoffersController#new (for 127.0.0.1 at 2010-04-08 13:55:55) [GET]
+  [4;36;1mSearchoffer Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `searchoffers`[0m
+Rendering searchoffers/new
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/pluto/public/searchoffers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:55:59) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProfilesController#index (for 127.0.0.1 at 2010-04-08 13:56:01) [GET]
+  [4;36;1mProfile Load (0.2ms)[0m   [0;1mSELECT * FROM `profiles` [0m
+Rendering template within layouts/profiles
+Rendering profiles/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/profiles]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:56:02) [GET]
+
+ActionController::RoutingError (No route matches "/infos" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:56:42) [GET]
+
+ActionController::RoutingError (No route matches "/offers" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:56:47) [GET]
+
+ActionController::RoutingError (No route matches "/searchoffer" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchoffersController#index (for 127.0.0.1 at 2010-04-08 13:56:49) [GET]
+  [4;35;1mSearchoffer Load (0.1ms)[0m   [0mSELECT * FROM `searchoffers` [0m
+Rendering searchoffers/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/pluto/public/searchoffers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/informations" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InformationController#index (for 127.0.0.1 at 2010-04-08 13:57:01) [GET]
+  [4;36;1mInformation Load (0.2ms)[0m   [0;1mSELECT * FROM `information` [0m
+Rendering information/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/pluto/public/information]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InformationController#index (for 127.0.0.1 at 2010-04-08 13:59:23) [GET]
+  [4;35;1mInformation Load (0.1ms)[0m   [0mSELECT * FROM `information` [0m
+Rendering template within layouts/information
+Rendering information/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/pluto/public/information]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:59:25) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 50ms (View: 7, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 13:59:27) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReactionsController#index (for 127.0.0.1 at 2010-04-08 13:59:28) [GET]
+  [4;35;1mReaction Load (0.1ms)[0m   [0mSELECT * FROM `reactions` [0m
+Rendering template within layouts/reactions
+Rendering reactions/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/pluto/public/reactions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:59:29) [GET]
+
+ActionController::RoutingError (No route matches "/searchoffer" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InformationController#index (for 127.0.0.1 at 2010-04-08 13:59:36) [GET]
+  [4;36;1mInformation Load (0.1ms)[0m   [0;1mSELECT * FROM `information` [0m
+Rendering template within layouts/information
+Rendering information/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/information]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 13:59:38) [GET]
+
+ActionController::RoutingError (No route matches "/searchoffer" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CompaniesController#index (for 127.0.0.1 at 2010-04-08 13:59:43) [GET]
+  [4;35;1mCompany Load (0.3ms)[0m   [0mSELECT * FROM `companies` [0m
+Rendering template within layouts/companies
+Rendering companies/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/pluto/public/companies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 13:59:49) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 14:01:59) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 36ms (View: 30, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 14:02:01) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:02:02) [GET]
+  [4;36;1mMywin Load (0.1ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReactionsController#index (for 127.0.0.1 at 2010-04-08 14:02:06) [GET]
+  [4;36;1mReaction Load (0.1ms)[0m   [0;1mSELECT * FROM `reactions` [0m
+Rendering template within layouts/reactions
+Rendering reactions/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/reactions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:02:07) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 14:02:08) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchoffersController#index (for 127.0.0.1 at 2010-04-08 14:02:10) [GET]
+  [4;36;1mSearchoffer Load (0.1ms)[0m   [0;1mSELECT * FROM `searchoffers` [0m
+Rendering template within layouts/searchoffers
+Rendering searchoffers/index
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/pluto/public/searchoffers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProfilesController#index (for 127.0.0.1 at 2010-04-08 14:02:11) [GET]
+  [4;35;1mProfile Load (0.1ms)[0m   [0mSELECT * FROM `profiles` [0m
+Rendering template within layouts/profiles
+Rendering profiles/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/profiles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InformationController#index (for 127.0.0.1 at 2010-04-08 14:02:11) [GET]
+  [4;36;1mInformation Load (0.1ms)[0m   [0;1mSELECT * FROM `information` [0m
+Rendering template within layouts/information
+Rendering information/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/information]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:02:12) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 15ms (View: 8, DB: 2) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (4.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (11.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:02:48) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 15ms (View: 8, DB: 17) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:03:16) [GET]
+  [4;35;1mMywin Load (0.2ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:03:20) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:07:05) [GET]
+  [4;35;1mMywin Load (0.2ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 14:07:16) [GET]
+  [4;35;1mMywin Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+Completed in 33ms (View: 16, DB: 4) | 200 OK [http://localhost/pluto/public/mywins/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#create (for 127.0.0.1 at 2010-04-08 14:07:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HqM3+///bkeu2xZG8J82BApurXpxuK4jb9E9sqJWm7k=", "mywin"=>{"address"=>"Den Dolech 2 5612 AZ Eindhoven", "accept"=>"1", "phonenumber"=>"343", "windowslayout"=>"Good", "points"=>"22", "windowsdescription"=>"", "numberofwindows"=>"4", "areacode"=>"134114", "surname"=>"Singh", "initial"=>"S"}}
+  [4;36;1mMywin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMywin Create (0.2ms)[0m   [0;1mINSERT INTO `mywins` (`address`, `accept`, `created_at`, `phonenumber`, `updated_at`, `windowslayout`, `numberofwindows`, `windowsdescription`, `points`, `areacode`, `surname`, `initial`) VALUES('Den Dolech 2 5612 AZ Eindhoven', 1, '2010-04-08 13:07:49', 343, '2010-04-08 13:07:49', 0, 4, '', 22, '134114', 'Singh', 'S')[0m
+  [4;35;1mSQL (65.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost/pluto/public/mywins/2
+Completed in 152ms (DB: 67) | 302 Found [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#show (for 127.0.0.1 at 2010-04-08 14:07:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+  [4;35;1mMywin Load (0.3ms)[0m   [0mSELECT * FROM `mywins` WHERE (`mywins`.`id` = 2) [0m
+Rendering template within layouts/mywins
+Rendering mywins/show
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/pluto/public/mywins/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:07:51) [GET]
+  [4;36;1mMywin Load (0.3ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;35;1mMywin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 14:11:08) [GET]
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/pluto/public/mywins/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#create (for 127.0.0.1 at 2010-04-08 14:11:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HqM3+///bkeu2xZG8J82BApurXpxuK4jb9E9sqJWm7k=", "mywin"=>{"address"=>"kromstraat 4, 2611 ER Delft", "accept"=>"1", "phonenumber"=>"2", "windowslayout"=>"Nice", "points"=>"2", "windowsdescription"=>"", "numberofwindows"=>"2", "areacode"=>"3", "surname"=>"Sieki", "initial"=>"J"}}
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMywin Create (0.4ms)[0m   [0mINSERT INTO `mywins` (`address`, `accept`, `created_at`, `phonenumber`, `updated_at`, `windowslayout`, `numberofwindows`, `windowsdescription`, `points`, `areacode`, `surname`, `initial`) VALUES('kromstraat 4, 2611 ER Delft', 1, '2010-04-08 13:11:25', 2, '2010-04-08 13:11:25', 0, 2, '', 2, '3', 'Sieki', 'J')[0m
+  [4;36;1mSQL (61.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost/pluto/public/mywins/3
+Completed in 77ms (DB: 63) | 302 Found [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#show (for 127.0.0.1 at 2010-04-08 14:11:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mMywin Load (0.2ms)[0m   [0;1mSELECT * FROM `mywins` WHERE (`mywins`.`id` = 3) [0m
+Rendering template within layouts/mywins
+Rendering mywins/show
+Completed in 51ms (View: 5, DB: 1) | 200 OK [http://localhost/pluto/public/mywins/3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:11:27) [GET]
+  [4;35;1mMywin Load (0.3ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#new (for 127.0.0.1 at 2010-04-08 14:22:34) [GET]
+  [4;36;1mMywin Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Rendering template within layouts/mywins
+Rendering mywins/new
+Completed in 98ms (View: 90, DB: 2) | 200 OK [http://localhost/pluto/public/mywins/new]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#create (for 127.0.0.1 at 2010-04-08 14:22:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HqM3+///bkeu2xZG8J82BApurXpxuK4jb9E9sqJWm7k=", "mywin"=>{"address"=>"5 Parc du Champ de Mars 75007 Paris, France", "accept"=>"0", "phonenumber"=>"34", "windowslayout"=>"12", "points"=>"23", "windowsdescription"=>"34", "numberofwindows"=>"34", "areacode"=>"33", "surname"=>"Tower", "initial"=>"E"}}
+  [4;35;1mMywin Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMywin Create (0.2ms)[0m   [0mINSERT INTO `mywins` (`address`, `accept`, `created_at`, `phonenumber`, `updated_at`, `windowslayout`, `numberofwindows`, `windowsdescription`, `points`, `areacode`, `surname`, `initial`) VALUES('5 Parc du Champ de Mars 75007 Paris, France', 0, '2010-04-08 13:22:52', 34, '2010-04-08 13:22:52', 12, 34, '34', 23, '33', 'Tower', 'E')[0m
+  [4;36;1mSQL (54.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost/pluto/public/mywins/4
+Completed in 69ms (DB: 60) | 302 Found [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#show (for 127.0.0.1 at 2010-04-08 14:22:52) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+  [4;36;1mMywin Load (0.2ms)[0m   [0;1mSELECT * FROM `mywins` WHERE (`mywins`.`id` = 4) [0m
+Rendering template within layouts/mywins
+Rendering mywins/show
+Completed in 17ms (View: 9, DB: 2) | 200 OK [http://localhost/pluto/public/mywins/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:22:54) [GET]
+  [4;35;1mMywin Load (0.3ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:27:56) [GET]
+  [4;35;1mMywin Load (0.1ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 65ms (View: 58, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]

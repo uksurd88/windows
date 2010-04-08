@@ -1,0 +1,72 @@
+//Variable decalarations
+a=0;
+
+// Testing function
+function alertme() {
+alert ("Hello Function Mate")
+}
+
+// Testing AJAX
+function newFormContent() {
+new Ajax.Updater("newFormContent",'base2s',{
+	parameters:{}});
+}
+
+// Default Google Maps view
+function gmap1() {
+      if (GBrowserIsCompatible()) {
+	var map = new GMap2(document.getElementById("map_canvas"));
+        map.setCenter(new GLatLng(52.38, -1.08), 13);
+        map.setUIToDefault();
+      }
+    }
+// Using Geocoding services for google
+	function showAddress(address) {
+var map = new GMap2(document.getElementById("map_canvas"));
+var geocoder = new GClientGeocoder();
+  geocoder.getLatLng(
+    address,
+    function(point) {
+      if (!point) {
+        alert(address + " not found");
+      } else {
+        map.setCenter(point, 13);
+        var marker = new GMarker(point);
+        map.addOverlay(marker);
+        marker.openInfoWindowHtml(address);
+      }
+    }
+  );
+}
+
+// Google Street View, sophistication sorted
+function gmap2(address) {
+	if (GBrowserIsCompatible()){
+	var myPano = new GStreetviewPanorama(document.getElementById("pano"));
+	var map = new GMap2(document.getElementById("map_canvas"));
+// Code for geocoding the address the map down to the street view.
+		var geocoder = new GClientGeocoder();
+		  geocoder.getLatLng(
+		    address,
+		    function(point) {
+		      if (!point) {
+			alert(address + " not found");
+		      } else {
+			map.setCenter(point, 13);
+			var marker = new GMarker(point);
+			map.addOverlay(marker);
+			marker.openInfoWindowHtml(address);
+		      }
+		    }
+		  );
+	map.setCenter(new GLatLng(35.4678, -97.5164),12); // Include this line to set the default location and the map will run.
+	svOverlay = new GStreetviewOverlay();
+	map.addOverlay(svOverlay);
+	GEvent.addListener(map,"click", function(overlay,latlng) {
+	  myPano.setLocationAndPOV(latlng);
+}); }}
+// Using scriptaculous
+
+
+
+////////////////

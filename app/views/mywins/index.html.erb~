@@ -1,0 +1,66 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+<title>Users</title>
+<!-- Fill in the content for meta tags and it will be good for search engine optimization-->
+<meta name="keywords" content="Project M" />
+<meta name="description" content="marketing,windows" />
+
+<%# Loading JavaScript Libraries %>
+<script language="JavaScript" src="javascripts/prototype.js"></script>
+<script language="JavaScript" src="javascripts/scriptaculous.js"></script>
+<script language="JavaScript" src="javascripts/scriptaculous.js?load=effects,builder"></script>
+<script language="JavaScript" src="javascripts/base1_functions.js"></script>
+<script language="JavaScript" src="javascripts/builder.js"></script>
+<script language="JavaScript" src="javascripts/effects.js"></script>
+<script language="JavaScript" src="javascripts/slider.js"></script>
+<script language="JavaScript" src="javascripts/sound.js"></script>
+<script language="JavaScript" src="javascripts/unittest.js"></script>
+
+<!-- Google maps key -->
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAg67NfPVyTcSZ7JkSG_u2TRR79MlrBOG_e1bJU5rmb4O0jMTyRRRvEdP1upedASWI1h6-JQ_s4iLd2A" type="text/javascript"></script>
+<h1>My Windows</h1>
+<%= link_to 'Add a window', new_mywin_path %>
+
+<table>
+  <tr>
+    <th>Initial</th>
+    <th>Surname</th>
+    <th>Address</th>
+    <th>Areacode</th>
+    <th>Phonenumber</th>
+    <th>Numberofwindows</th>
+    <th>Windowsdescription</th>
+    <th>Windowslayout</th>
+    <th>Points</th>
+    <th>Accept</th>
+  </tr>
+
+<% @mywins.each do |mywin| %>
+  <tr>
+    <td><%=h mywin.initial %></td>
+    <td><%=h mywin.surname %></td>
+    <td><%=h mywin.address %></td>
+    <td><%=h mywin.areacode %></td>
+    <td><%=h mywin.phonenumber %></td>
+    <td><%=h mywin.numberofwindows %></td>
+    <td><%=h mywin.windowsdescription %></td>
+    <td><%=h mywin.windowslayout %></td>
+    <td><%=h mywin.points %></td>
+    <td><%=h mywin.accept %></td>
+    <td><%= link_to 'Show', mywin %></td>
+    <td><%= link_to 'Edit', edit_mywin_path(mywin) %></td>
+    <td><%= link_to 'Destroy', mywin, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><a onClick="gmap2('<%=mywin.address%>');">Show on Map </a></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mywin', new_mywin_path %>

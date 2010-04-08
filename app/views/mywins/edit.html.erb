@@ -1,0 +1,52 @@
+<h1>Editing mywin</h1>
+
+<% form_for(@mywin) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :initial %><br />
+    <%= f.text_field :initial %>
+  </p>
+  <p>
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :areacode %><br />
+    <%= f.text_field :areacode %>
+  </p>
+  <p>
+    <%= f.label :phonenumber %><br />
+    <%= f.text_field :phonenumber %>
+  </p>
+  <p>
+    <%= f.label :numberofwindows %><br />
+    <%= f.text_field :numberofwindows %>
+  </p>
+  <p>
+    <%= f.label :windowsdescription %><br />
+    <%= f.text_area :windowsdescription %>
+  </p>
+  <p>
+    <%= f.label :windowslayout %><br />
+    <%= f.text_field :windowslayout %>
+  </p>
+  <p>
+    <%= f.label :points %><br />
+    <%= f.text_field :points %>
+  </p>
+  <p>
+    <%= f.label :accept %><br />
+    <%= f.check_box :accept %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @mywin %> |
+<%= link_to 'Back', mywins_path %>

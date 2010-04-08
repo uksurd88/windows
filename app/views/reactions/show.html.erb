@@ -1,0 +1,23 @@
+<p>
+  <b>Company:</b>
+  <%=h @reaction.company %>
+</p>
+
+<p>
+  <b>Rotation:</b>
+  <%=h @reaction.rotation %>
+</p>
+
+<p>
+  <b>Preview:</b>
+  <%=h @reaction.preview %>
+</p>
+
+<p>
+  <b>Accept:</b>
+  <%=h @reaction.accept %>
+</p>
+
+
+<%= link_to 'Edit', edit_reaction_path(@reaction) %> |
+<%= link_to 'Back', reactions_path %>

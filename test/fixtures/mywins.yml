@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  initial: MyString
+  surname: MyString
+  address: MyString
+  areacode: MyString
+  phonenumber: 1
+  numberofwindows: 1
+  windowsdescription: MyText
+  windowslayout: 1
+  points: 1
+  accept: false
+
+two:
+  initial: MyString
+  surname: MyString
+  address: MyString
+  areacode: MyString
+  phonenumber: 1
+  numberofwindows: 1
+  windowsdescription: MyText
+  windowslayout: 1
+  points: 1
+  accept: false

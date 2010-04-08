@@ -1,0 +1,26 @@
+<h1>Listing reactions</h1>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Rotation</th>
+    <th>Preview</th>
+    <th>Accept</th>
+  </tr>
+
+<% @reactions.each do |reaction| %>
+  <tr>
+    <td><%=h reaction.company %></td>
+    <td><%=h reaction.rotation %></td>
+    <td><%=h reaction.preview %></td>
+    <td><%=h reaction.accept %></td>
+    <td><%= link_to 'Show', reaction %></td>
+    <td><%= link_to 'Edit', edit_reaction_path(reaction) %></td>
+    <td><%= link_to 'Destroy', reaction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New reaction', new_reaction_path %>

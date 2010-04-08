@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  company: MyString
+  rotation: MyString
+  preview: MyString
+  accept: false
+
+two:
+  company: MyString
+  rotation: MyString
+  preview: MyString
+  accept: false

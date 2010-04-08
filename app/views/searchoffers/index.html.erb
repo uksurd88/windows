@@ -1,0 +1,22 @@
+<h1>Listing searchoffers</h1>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Address</th>
+  </tr>
+
+<% @searchoffers.each do |searchoffer| %>
+  <tr>
+    <td><%=h searchoffer.company %></td>
+    <td><%=h searchoffer.address %></td>
+    <td><%= link_to 'Show', searchoffer %></td>
+    <td><%= link_to 'Edit', edit_searchoffer_path(searchoffer) %></td>
+    <td><%= link_to 'Destroy', searchoffer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New searchoffer', new_searchoffer_path %>

@@ -1,0 +1,20 @@
+<h1>Editing searchoffer</h1>
+
+<% form_for(@searchoffer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @searchoffer %> |
+<%= link_to 'Back', searchoffers_path %>

@@ -1,0 +1,2 @@
+module SearchoffersHelper
+end

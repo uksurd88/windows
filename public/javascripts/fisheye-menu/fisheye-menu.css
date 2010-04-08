@@ -1,0 +1,47 @@
+/* Fisheye Menu Styles */
+#fisheye_menu {
+	list-style: none;
+	padding: 0;
+	margin: 0px;
+	height: 81px; /* Alter this to change the height margin of the menu bar. Setting it to 81 pixels wont let it to interfere with second line*/
+}
+#fisheye_menu li {
+	position: relative;
+	display: block;
+	float: left;
+}
+#fisheye_menu span {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	text-align: center;
+	width: 79px;
+	padding: 1px;
+	margin: 0;
+	border: solid 1px #bbb;	
+	color: #333;
+	background: #eee;
+}
+#fisheye_menu a {
+	text-decoration: none;
+}
+#fisheye_menu img {
+	border: 0;
+	vertical-align: top;
+}
+
+#mainWrapper { height: auto; width: 720px; margin: 0pt auto; background-color: white; 
+			   border: 0px solid #3749bc;}
+			   
+			   ul {list-style-type: none; width:664px; margin:auto; padding:0;}
+			   
+			   li {
+
+					border: 0px solid #000;
+					margin: 0px;
+					
+					padding: 5px;
+					text-align: center;
+					width: 100px;
+					float: left;
+					}

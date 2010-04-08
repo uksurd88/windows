@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Mywins: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+<!-- Top navigation link line-->
+<center><table>
+<th><a href="#"><img src="http://localhost/pluto/public/images/rails.png"></img></a></th>
+<!-- Width moves the header cell -->
+  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Users","http://localhost/pluto/public/users") %></font></th>
+  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Companies","http://localhost/pluto/public/companies") %></font></th>
+<th><a href="#"><img src="http://localhost/pluto/public/images/rails.png"></img></a></th>
+</table></center>
+
+<!-- Second navigation link line -->
+<table>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/mywins">My Windows</a></font></th>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/reactions">Reactions</a></font></th>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/searchoffers">Search Offers</a></font></th>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/profiles">Profile</a></font></th>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/information">Placing Information</a></font></th>
+</table>
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+
+</body>
+</html>
