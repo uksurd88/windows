@@ -1396,3 +1396,94 @@ Rendering template within layouts/mywins
 Rendering mywins/index
   [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
 Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 15:06:26) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 36ms (View: 30, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 15:07:52) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/pluto/public/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 15:07:54) [GET]
+  [4;36;1mMywin Load (1.0ms)[0m   [0;1mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;35;1mMywin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `mywins`[0m
+Completed in 89ms (View: 81, DB: 2) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReactionsController#index (for 127.0.0.1 at 2010-04-08 15:08:05) [GET]
+  [4;36;1mReaction Load (0.1ms)[0m   [0;1mSELECT * FROM `reactions` [0m
+Rendering template within layouts/reactions
+Rendering reactions/index
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/pluto/public/reactions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchoffersController#index (for 127.0.0.1 at 2010-04-08 15:08:07) [GET]
+  [4;35;1mSearchoffer Load (3.4ms)[0m   [0mSELECT * FROM `searchoffers` [0m
+Rendering template within layouts/searchoffers
+Rendering searchoffers/index
+Completed in 22ms (View: 13, DB: 4) | 200 OK [http://localhost/pluto/public/searchoffers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProfilesController#index (for 127.0.0.1 at 2010-04-08 15:08:08) [GET]
+  [4;36;1mProfile Load (3.1ms)[0m   [0;1mSELECT * FROM `profiles` [0m
+Rendering template within layouts/profiles
+Rendering profiles/index
+Completed in 20ms (View: 12, DB: 3) | 200 OK [http://localhost/pluto/public/profiles]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InformationController#index (for 127.0.0.1 at 2010-04-08 15:08:09) [GET]
+  [4;35;1mInformation Load (0.1ms)[0m   [0mSELECT * FROM `information` [0m
+Rendering template within layouts/information
+Rendering information/index
+Completed in 22ms (View: 12, DB: 0) | 200 OK [http://localhost/pluto/public/information]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CompaniesController#index (for 127.0.0.1 at 2010-04-08 15:08:10) [GET]
+  [4;36;1mCompany Load (0.5ms)[0m   [0;1mSELECT * FROM `companies` [0m
+Rendering template within layouts/companies
+Rendering companies/index
+Completed in 66ms (View: 13, DB: 1) | 200 OK [http://localhost/pluto/public/companies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CompaniesController#index (for 127.0.0.1 at 2010-04-08 15:08:15) [GET]
+  [4;35;1mCompany Load (0.1ms)[0m   [0mSELECT * FROM `companies` [0m
+Rendering template within layouts/companies
+Rendering companies/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/pluto/public/companies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-08 15:08:16) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/pluto/public/users]
