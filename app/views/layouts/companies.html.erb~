@@ -11,11 +11,11 @@
 
 <!-- Top navigation link line-->
 <center><table>
-<th><a href="#"><img src="http://smooth-river-50.heroku.com/images/rails.png"></img></a></th>
+<th><a href="#"><img src="http://localhost/pluto/public/images/rails.png"></img></a></th>
 <!-- Width moves the header cell -->
-  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Users","http://smooth-river-50.heroku.com/users") %></font></th>
-  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Companies","http://smooth-river-50.heroku.com/companies") %></font></th>
-<th><a href="#"><img src="http://smooth-river-50.heroku.com/images/rails.png"></img></a></th>
+  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Users","http://localhost/pluto/public/users") %></font></th>
+  <th style="width:250px;height:75px;font-family:cursive;border:groove 12px #6DB72C;"><font size="5"><%= link_to("Companies","http://localhost/pluto/public/companies") %></font></th>
+<th><a href="#"><img src="http://localhost/pluto/public/images/rails.png"></img></a></th>
 </table></center>
 
 <!-- Second navigation link line -->

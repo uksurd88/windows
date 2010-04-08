@@ -21,7 +21,7 @@
 <table>
 <th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/mywins">My Windows</a></font></th>
 <th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/reactions">Reactions</a></font></th>
-<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/searchoffer">Search Offers</a></font></th>
+<th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/searchoffers">Search Offers</a></font></th>
 <th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/profiles">Profile</a></font></th>
 <th style="width:250px;height:75px;font-family:cursive;border:dotted 12px #6DB72C;"><font size="5"><a href="http://localhost/pluto/public/information">Placing Information</a></font></th>
 </table>

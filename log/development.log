@@ -1386,3 +1386,13 @@ Rendering template within layouts/mywins
 Rendering mywins/index
   [4;36;1mMywin Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
 Completed in 65ms (View: 58, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MywinsController#index (for 127.0.0.1 at 2010-04-08 14:29:31) [GET]
+  [4;35;1mMywin Load (0.5ms)[0m   [0mSELECT * FROM `mywins` [0m
+Rendering template within layouts/mywins
+Rendering mywins/index
+  [4;36;1mMywin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `mywins`[0m
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/pluto/public/mywins]
