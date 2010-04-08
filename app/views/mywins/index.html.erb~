@@ -60,7 +60,12 @@
   </tr>
 <% end %>
 </table>
-
+<br><br>
+<!-- Loading Default Google Maps view -->
+<div id="gmap1">
+<!--<body onload='gmap2();' onunload="GUnload()">-->
+<div class='i' id="map_canvas" style="width: 810px; height: 300px"></div> <br>
+<div id="pano" style="width: 810px; height: 350px"></div>
+</body>
+</div>
 <br />
-
-<%= link_to 'New mywin', new_mywin_path %>
